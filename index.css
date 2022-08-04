@@ -1,0 +1,144 @@
+/* Propiedades de etiquetas */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    padding-top: 110px;
+}
+
+section {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    font-family: 'Rubik', 'sans-serif';
+    border-radius: 1000px;
+    border: solid 1px #000;
+    padding: 5px 35px;
+}
+
+/* Container de flexbox */
+.container {
+    display: flex;
+}
+
+/* Divisiones de sitio principales */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-bottom: 2px solid grey;
+
+    /* Quise poner este gradient acá para que haga un "sombreado" abajo del navbar, pero como el logo no es png y no iba a pagar, no lo pude poner */
+    /* background: rgb(240, 240, 240);
+    background: linear-gradient(0deg, rgba(240, 240, 240, 1) 0%, rgba(245, 245, 245, 1) 5%, rgba(255, 255, 255, 1) 40%); */
+}
+
+.hero {
+    display: flex;
+    box-sizing: border-box;
+    padding: 25px;
+    /* min-height: 750px; */
+    width: 98%;
+    margin-top: 1%;
+    border-radius: 50px;
+    background-color: white;
+}
+
+/* Clases de navbar */
+.navbar .container {
+    flex-direction: horizontal;
+    width: 50%;
+    /* flex-grow: 0.5; */
+    height: 100%;
+}
+
+.logo {
+    height: 100%;
+}
+
+.links {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 25%;
+    padding: 10px 20px;
+    border: 2px green solid;
+    border-radius: 1000px;
+
+    font-size: 23px;
+    color: green;
+    font-family: 'Rubik', sans-serif;
+    /* height: 100%; */
+}
+
+.hero {
+    display: flex;
+    box-sizing: border-box;
+    padding: 25px;
+    /* min-height: 750px; */
+    width: 98%;
+    margin-top: 1%;
+    border-radius: 50px;
+    background-color: white;
+}
+
+
+/* Clases de hero */
+.hero .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Rubik', 'sans-serif';
+    width: 100%;
+}
+
+.text-container {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 1rem;
+    height: 40px;
+}
+
+.buy-button {
+    color: white;
+    background-color: black;
+}
+
+.aboutus-button {
+    color: black;
+    background-color: white;
+}
