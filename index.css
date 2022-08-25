@@ -97,7 +97,7 @@ button {
 }
 
 /* Clases de hero */
-.hero .container {
+.intro-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -109,7 +109,7 @@ button {
     /* padding: 25px; */
 }
 
-.hero img {
+.hero-img {
     border-top-right-radius: 50px;
 }
 
@@ -142,7 +142,7 @@ button {
     background-color: white;
 }
 
-.description {
+.section {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -154,8 +154,77 @@ button {
     color: grey;
 }
 
-.description p {
+.section-text {
     width: 80%;
     text-align: center;
     margin: 0.5rem;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.icons-container i {
+    font-size: 50px;
+}
+
+.icon {
+    max-width: 18%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    border-top: 1px lightgray solid;
+    font-family: 'Rubik', 'sans-serif';
+    color: grey;
+}
+
+.footer img {
+    max-height: 100px;
+}
+
+.no-margin {
+    margin-top: 0px;
+}
+
+.contact {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.contact-info {
+    display: grid;
+    width: 60%;
+    grid-column-gap: 0px;
+    grid-template-columns: [x0] 1fr [x1] 2fr [x2] 2fr [x3] 1fr [x4];
+    grid-template-rows: [y0] 1fr [y1] 2fr [y2];
+}
+
+.contact-image {
+    width: 40%;
+}
+
+.contact-block {
+    text-align: center;
+}
+
+.contact-header {
+    grid-column: x0 / x4;
+}
+
+.contact-body-1 {
+    grid-column: x1 / x2;
+}
+
+.contact-body-2 {
+    grid-column: x2 / x3;
 }
