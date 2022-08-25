@@ -203,14 +203,14 @@ button {
 
 .contact-info {
     display: grid;
-    width: 60%;
+    width: 65%;
     grid-column-gap: 0px;
     grid-template-columns: [x0] 1fr [x1] 2fr [x2] 2fr [x3] 1fr [x4];
     grid-template-rows: [y0] 1fr [y1] 2fr [y2];
 }
 
-.contact-image {
-    width: 40%;
+.contact-map {
+    width: 35%;
 }
 
 .contact-block {
